@@ -1,0 +1,354 @@
+CAP.1
+1.
+R:
+(a) Não é fórmula;
+(b)É fórmula;
+(c)É fórmula;
+(d)Não é fórmula;
+(e)É fórmula;
+
+
+2. 
+R:
+(a)Sim. As formulas mais simples podem possuir apenas o valor verdade ou símbolo proposicional, exemplo a fórmula P e true.
+(b)4: Pontuação, Valor-Verdade, Proposicionais e Conectivos proposicionais.
+(c)Não existe. Os símbolos de pontuação são indicadores de ordem e escopo das negações, ou seja, não haveria um significado sem eles.
+
+
+3. 
+R:
+(a) ((¬¬P ∨ Q) ↔ (P → Q)) ∧ P
+Sub: ¬¬P,¬P,P,(¬¬P ∨ Q),Q, (P → Q), (¬¬P ∨ Q) ↔ (P → Q), ((¬¬P ∨ Q) ↔ (P → Q)) ∧ P.
+Comp[((¬¬P ∨ Q) ↔ (P → Q)) ∧ P]
+Comp[((¬¬P ∨ Q) ↔ (P → Q))]+Comp[P]+1
+Comp[(¬¬P ∨ Q)]+Comp[(P → Q)]+1+1+1
+Comp[¬¬P]+Comp[Q]+1+Comp[P]+Comp[Q]+1+1+1+1
+Comp[P]+1+1+1+1+1+1+1+1+1+1v
+1+1+1+1+1+1+1+1+1+1+1+1
+
+(b) P → ((Q → R) → ((P → R) → (P → R)))
+Sub:P,Q,R,(Q → R),(P → R), ((P → R) → (P → R)), ((Q → R) → ((P → R) → (P → R))), P → ((Q → R) → ((P → R) → (P → R))).
+Comp[P → ((Q → R) → ((P → R) → (P → R)))]
+Comp[((Q → R) → ((P → R) → (P → R)))]+Comp[1]+1
+Comp[(Q → R)]+1+Comp[((P → R) → (P → R))]+1+1
+Comp[Q]+1+Comp[R]+1+Comp[(P → R)]+1+(P → R)+1+1
+1+1+1+Comp[P]+1+Comp[R]+1+Comp[P]+1+Comp[R]+1+1
+1+1+1+1+1+1+1+1+1+1+1+1+1
+
+(c) ((P → ¬P) ↔ ¬P) ∨ Q
+Sub:P,¬P,Q,(P → ¬P),((P → ¬P) ↔ ¬P),((P → ¬P) ↔ ¬P) ∨ Q
+Comp[((P → ¬P) ↔ ¬P) ∨ Q]
+Comp[((P → ¬P) ↔ ¬P)]+1+1
+Comp[(P → ¬P)]+1+Comp[¬P]+1+1
+Comp[P]+1+Comp[¬P]+1+Comp[P]+1+1+1
+1+1+1+Comp[P]+1+1+1+1+1
+1+1+1+1+1+1+1+1+1
+
+(d) ¬(P → ¬P)
+Sub:P,¬P,(P → ¬P), ¬(P → ¬P)
+Comp[¬(P → ¬P)]
+Comp[(P → ¬P)]+1
+Comp[P]+1+Comp[¬P]+1
+1+1+Comp[P]+1+1
+1+1+1+1+1
+
+
+
+4. 
+R:
+(a) ((¬(¬P)) ↔ ((¬((¬(¬(P ∨ Q))) → R)) ∧ P))
+    ((¬(¬P))<->((¬((¬¬(P V Q))-> R))^P))
+    ((¬(¬P)) <-> ((¬((¬¬(P V Q))-> R))^P))
+    ((¬¬P)<->((¬((¬¬(PVQ))->R))^P))
+    
+(b) (¬P → (Q ∨ R)) ↔ ((P ∧ Q) ↔ (¬¬R ∨ ¬P)) ---Nada para retirar
+
+(c) ((P ∨ Q) → (P → (¬Q)))
+    ( P ∨ Q) → (P → ¬Q)
+    (P V Q) -> (P -> ¬Q)
+    (P V Q) -> P ->¬Q 
+    
+
+
+5. 
+R:
+(a) P ∨ ¬Q → R ↔ ¬R
+   ((P ∨ ¬Q) → R) ↔ ¬R
+   (P ∨ ¬Q) → R ↔ ¬R
+   (P ∨ ¬Q) → (R ↔ ¬R)
+   (P ∨ (¬Q → R)) ↔ ¬R
+   P ∨ (¬Q → (R ↔ ¬R))
+   P ∨ ¬(Q → R ↔ ¬R)
+   
+   
+(b) Q → ¬P ∧ Q
+    Q → ¬P ∧ Q
+    Q → (¬P ∧ Q)
+    Q → ¬(P ∧ Q)
+    
+(c) ¬P ∨ Q ↔ Q
+    ¬P ∨ Q ↔ Q
+    (¬P ∨ Q) ↔ Q
+    ¬(P ∨ Q) ↔ Q
+    ¬(P ∨ Q ↔ Q)
+    
+(d) ¬¬P → Q ↔ P ∧ P¬¬R
+    (¬¬P → Q) ↔ (P ∧ ¬¬R)
+
+
+6. 
+R:
+a:
+(a) ((¬¬P ∨ Q) ↔ (P → Q)) ∧ P10.000
+    ∧ <-> ∨ ¬¬PQ ->PQtrue
+(b) P → ((Q → R) → ((P → R) → (P → R)))
+    ->P->->QR->->PR->PR
+(c) ((P → ¬P) ↔ ¬P) ∨ Q
+     ∨ <->->P¬P¬PQ
+(d) ¬(P → ¬P)
+    ¬ ->P¬P
+(a) ((¬(¬P)) ↔ ((¬((¬(¬(P ∨ Q))) → R)) ∧ P))
+    <-> ∧¬ -> ¬¬∨PQRP¬¬P
+(b) (¬P → (Q ∨ R)) ↔ ((P ∧ Q) ↔ (¬¬R ∨ ¬P))
+    <->-> ¬P∨QR<-> ∧PQ∨¬¬R¬P
+(c) ((P ∨ Q) → (P → (¬Q)))
+    ->∨PQ->P¬Q
+
+
+7. Responda, justificando sua resposta.
+(a) É possível encontrar uma fórmula H, da Lógica Proposicional, escrita
+na notação convencional e que corresponda a duas fórmulas diferentes
+escritas na notação polonesa?
+R:Não é possível encontrar uma fórmula que corresponda a duas expressões escritas na notação polonesa (também conhecida como notação pré-fixa) na Lógica Proposicional.
+A notação polonesa é uma notação única e determinística, ou seja, uma expressão escrita na notação polonesa corresponde a uma única expressão na notação convencional,
+e vice-versa.
+(b) É possível encontrar uma fórmula H escrita na notação polonesa, que
+corresponda a duas fórmulas diferentes da Lógica Proposicional escritas
+na notação convencional?
+
+R:Sim, é possível encontrar uma expressão escrita na notação polonesa que possa ser interpretada de duas formas diferentes,
+resultando em fórmulas distintas da Lógica Proposicional escritas na notação convencional. Isso ocorre devido à ambiguidade na interpretação de algumas expressões
+na notação polonesa.
+
+8. 
+
+R:
+(a) ↔ → ∨ P ¬ Q R ¬ R
+(b) → Q ¬ P ∧ Q
+(c) ↔ ∨ ¬ P Q Q
+(d) ↔ → ¬ ¬ P Q ∧ P ¬ ¬ R
+(e) ↔ → ∨ P Q → R ∨ P Q ¬ S
+(f) ↔ → ∧ P Q → ∨ P Q ¬ R ¬ R
+(g) → ∨ ¬ P ¬ Q R ∨ ∨ P Q ¬ R ¬ P
+(h) ↔ → ∨ ¬ P Q ∧ ∧ P Q ¬ ¬ R ¬ P
+
+
+
+10. 
+R:
+(a) A paridade de comp[H] será sempre par, pois a complexidade de uma fórmula H sem o conectivo ¬ é dada pela soma dos números de ocorrências
+dos conectivos ∧ e ∨ na fórmula. Cada ocorrência desses conectivos contribui com uma complexidade de 2. Como a soma de dois números pares sempre resulta em
+um número par, a complexidade total de H será par.
+
+(b) O número de conectivos em H está relacionado linearmente com a complexidade de H. Por outro lado, o número de proposições atômicas em H contribui para a
+complexidade de maneira linear e constante, ou seja, para cada proposição atômica adicionada, a complexidade aumenta em 1. Portanto, o aumento do número de
+proposições atômicas tem um efeito limitado na complexidade de H, enquanto o aumento do número de conectivos tem um efeito mais significativo.
+
+
+
+CAP.2
+2. Comente, do ponto de vista lógico, a diferença entre sintaxe e semântica.
+
+R: A sintaxe refere-se à estrutura ou à gramática das sentenças em uma linguagem formal, ou seja, se as regras sintáticas foram seguidas corretamente.
+Por outro lado, a semântica se concentra no significado das sentenças e como elas são interpretadas. Uma frase pode estar gramaticalmente correta,
+mas ainda ser semântica incorreta se seu significado for ilógico ou impossível de ser verdadeiro. Portanto, a diferença entre sintaxe e semântica é crucial
+para garantir que as declarações lógicas feitas em um sistema de informação sejam válidas e precisas.
+
+
+3. 
+
+R: “^” = “e” Diferentemente do “V” com o conectivo “^” afirmo que eu vou no cinema e teatro
+“->” = Implica ou seja com esse conectivo implica que ao ir no cinema irei ao teatro como consequencia 
+“<->” =  bi-implicação com esse conectivo eu afirmo que ao ir no cinema também ira ao teatro, porem ao não ir no cinema com certeza não irei ao teatro
+“¬” = negação aqui eu nego uma sentença ou seja ¬cinema; não irei no cinema.
+
+
+4. 
+R:
+a) I[P] = T e/ou I[Q] = T
+b) I[Q] = T
+c) I[H] = T
+d) Não se pode concluir nada
+e) I[H] = F
+
+
+5. Considere as fórmulas a seguir:
+(a) (¬P ∨ Q) ↔ (P → Q)
+(b) P → ((Q → R) → ((P → R) → (P → R)))
+(c) (P → ¬Q) ↔ ¬P
+(d) (Q → ¬P)
+(e) (P → (Q → R)) ↔ ((P ∧ Q) → R)
+(f) (R ∧ ¬P) ↔ (P ∧ R)
+(g) (P → Q) → (((P ∧ Q) ↔ P) ∧ ((P ∨ Q) ↔ Q))
+(h) (f alse → Q) ↔ R
+(i) true → Q
+(j) (P → f alse) ↔ R
+(k) P → true
+Determine a tabela-verdade associada a cada fórmula.
+Seja I uma interpretação tal que I[P] = T, I[Q] = F e I[R] = F, o que
+podemos concluir a respeito do valor de verdade de cada fórmula?
+ Seja J uma interpretação que interpreta todas as fórmulas anteriores
+como sendo verdadeiras. Além disso, J[P] = T. O que podemos concluir
+a respeito de J[Q] e J[R], em cada um dos casos?
+
+R:
+(a)
+P	Q	¬P	|¬P ∨ Q	|P → Q|	(¬P ∨ Q) ↔ (P → Q)
+T	T	F	      T	     T	       T
+T	F	F     	F	     F	       T
+F	T	T	      T	     T	       T
+F	F	T	      F	     T	       T
+Se I[P] = T, I[Q] = F e I[R] = F, então:
+
+(b)
+
+P	Q	R	|Q → R	|P → R	|(Q → R) → ((P → R) → (P → R))	|P → ((Q → R) → ((P → R) → (P → R)))
+T	T	T	   T	     T	                T	                             T
+T	T	F	   F	     F	                T                              T
+T	F	T	   T	     T	                T	                             T
+T	F	F	   T	     F	                T	                             T
+F	T	T	   T	     T	                T	                             T
+F	T	F	   F	     T	                T	                             T
+F	F	T	   T	     T	                T	                             T
+F	F	F	   T	     T	                T	                             T
+Se I[P] = T, I[Q] = F e I[R] = F, então:
+
+(c)
+
+P	Q	¬P	|P → ¬Q	|¬P ↔ (P → ¬Q)
+T	T	 F	   F	        F
+T	F	 F	   T	        T
+F	T	 T	   T	        F
+F	F	T	     T	        F
+Se I[P] = T, I[Q] = F e I[R] = F, então:
+
+(d)
+
+P	Q|	¬P|	Q → ¬P
+T	T	  F	    F
+T	F	  F	    T
+F	T	  T	    T
+F	F	  T	    T
+Se I[P] = T, I[Q] = F e I[R] = F, então:
+
+(e)
+
+P	Q	R|	Q → R |	P → (Q → R)|	P ∧ Q	|(P ∧ Q) → R|	(P → (Q → R)) ↔ ((P ∧ Q) → R)
+T	T	      T	     T	            T	       T	          T	              T
+T	T	      F	     F	            F	       T		
+
+6. 
+R:
+(a) A interpretação I[(P ∨ R) → (Q ∨ R)] será verdadeira para qualquer valor de P, Q e R, pois a premissa (P ∨ R) será verdadeira sempre
+que pelo menos um dos dois for verdadeiro, e a conclusão (Q ∨ R) também será verdadeira sempre que pelo menos um dos dois for verdadeiro.
+
+(b) A interpretação I[(P ∧ R) → (Q ∧ R)] será verdadeira apenas quando P e Q forem verdadeiros e R for verdadeiro, pois a premissa exige que
+P e R sejam verdadeiros ao mesmo tempo, e a conclusão exige que Q e R sejam verdadeiros ao mesmo tempo.
+
+(c) A interpretação I[(¬P ∨ Q) → (P ∨ Q)] será verdadeira para qualquer valor de P e Q, pois a premissa (¬P ∨ Q) será verdadeira sempre que
+pelo menos um dos dois for verdadeiro, e a conclusão (P ∨ Q) também será verdadeira sempre que pelo menos um dos dois for verdadeiro.
+
+Repita este exercício supondo I[P → Q] = F.
+
+(a) A interpretação I[(P ∨ R) → (Q ∨ R)] será verdadeira apenas quando P for falso e Q e R forem verdadeiros, pois a premissa exige que P seja
+falso e a conclusão exige que Q e R sejam verdadeiros.
+
+(b) A interpretação I[(P ∧ R) → (Q ∧ R)] será verdadeira para qualquer valor de P, Q e R, pois a premissa será verdadeira sempre que P e R forem
+verdadeiros ou quando P for falso, e a conclusão será verdadeira sempre que Q e R forem verdadeiros ou quando R for falso.
+
+(c) A interpretação I[(¬P ∨ Q) → (P ∨ Q)] será verdadeira para qualquer valor de P e Q, pois a premissa será verdadeira sempre que pelo menos um dos dois
+for verdadeiro ou quando os dois forem falsos, e a conclusão será verdadeira sempre que pelo menos um dos dois for verdadeiro.
+
+
+7. 
+R:
+(a) Se I[P ↔ Q] = T, então I[¬P ∧ Q] = T, pois ¬P é verdadeiro se e somente se Q é falso, o que resulta em P ↔ Q sendo falso.
+Portanto, I[¬P ∧ Q] é falso, pois é uma conjunção em que um dos elementos é falso.
+
+(b) Se I[P ↔ Q] = T, então I[P ∨ ¬Q] = T, pois P ∨ ¬Q é verdadeiro se e somente se P e Q têm o mesmo valor de verdade.
+Como P ↔ Q é verdadeiro, então P e Q têm o mesmo valor de verdade, logo P ∨ ¬Q é verdadeiro.
+
+(c) Se I[P ↔ Q] = T, então I[Q → P] = T, pois Q → P é verdadeiro se e somente se P → Q também for verdadeiro, o que é o caso. Portanto, I[Q → P] é verdadeiro.
+
+(d) Se I[P ↔ Q] = T, então I[(P ∧ R) ↔ (Q ∧ R)] = T, pois (P ∧ R) ↔ (Q ∧ R) é equivalente a [(P ↔ Q) ∧ R] ∨ ¬(P ∨ Q),
+que é verdadeiro quando P ↔ Q e R têm o mesmo valor de verdade. Portanto, I[(P ∧ R) ↔ (Q ∧ R)] é verdadeiro.
+
+(e) Se I[P ↔ Q] = T, então I[(P ∨ R) ↔ (Q ∨ R)] = T, pois (P ∨ R) ↔ (Q ∨ R) é equivalente a [(P ↔ Q) ∨ R] ∧ ¬(P ∧ Q),
+que é verdadeiro quando P ↔ Q e R têm o mesmo valor de verdade. Portanto, I[(P ∨ R) ↔ (Q ∨ R)] é verdadeiro.
+
+Repita este exercício supondo I[P ↔ Q] = F:
+
+(a) Se I[P ↔ Q] = F, então I[¬P ∧ Q] pode ser verdadeiro ou falso, pois P e Q podem ter valores de verdade diferentes.
+
+(b) Se I[P ↔ Q] = F, então I[P ∨ ¬Q] pode ser verdadeiro ou falso, pois P e Q podem ter valores de verdade diferentes.
+
+(c) Se I[P ↔ Q] = F, então I[Q → P] pode ser verdadeiro ou falso, pois P e Q podem ter valores de verdade diferentes.
+
+(d) Se I[P ↔ Q] = F, então I[(P ∧ R) ↔ (Q ∧ R)] é sempre verdadeiro, pois as proposições (P ∧ R) e (Q ∧ R) sempre têm o mesmo valor de verdade,
+independentemente do valor de verdade de P e Q.
+
+(e) Se I[P ↔ Q] = F, então I[(P ∨ R) ↔ (Q ∨ R)] é sempre verdadeiro, pois as proposições (P ∨ R) e (Q ∨ R) sempre têm o mesmo valor de verdade,
+independentemente do valor de verdade de P e Q.
+
+
+8.
+R:
+(a) I[P] = F, o que significa que P é falso. Ao substituir F por P em H, podemos simplificar a fórmula e obter uma expressão que depende apenas do valor de Q.
+Então, o valor de verdade de H em I depende do valor de Q.
+
+(b)I[P] = T, o que significa que P é verdadeiro. Ao substituir T por P em H, podemos simplificar a fórmula e obter uma expressão que depende apenas do valor de Q.
+Ao avaliar essa expressão, descobrimos que o valor de verdade de H em I depende do valor de Q. Se Q é verdadeiro, então H é verdadeiro, mas se Q é falso,
+então H é falso.
+
+
+10. 
+R:
+(a)(J ∧ ¬M) ∨ (¬J ∧ M)
+(b)¬P → N
+(c) C → ¬E
+(d)(B ∧ I ∧ S ∧ R) → R
+(e)(O → I) ∧ (I → ¬O)
+(f) (M ∧ ¬K) ∨ (¬M ∧ ¬K ∧ F)
+
+
+12. 
+R:
+a) A expressão "Possivelmente irei ao cinema" é difícil de representar na lógica proposicional, pois se trata de uma possibilidade e não de uma proposição definida.
+
+b) Podemos usar a lógica proposicional para representar a frase "eu era gordo e hoje sou magro" como p ∧ q, em que p representa "eu era gordo"
+e q representa "estou magro hoje".
+
+c) Ao utilizar a lógica proposicional, podemos representar a frase "Há um aluno admirado por todos no curso de Ciência da Computação" como p ∧ q,
+em que p representa "Há um aluno" e q representa "Todos os alunos o admiram".
+
+d) Na lógica proposicional, podemos representar a frase "Tem um aluno na minha classe que não gosta de nenhum dos colegas" como p ∧ q, em que p representa
+"Há um aluno na minha classe" e q representa "Ele não gosta de nenhum de seus colegas".
+
+e) Podemos usar a lógica proposicional para representar a frase "Há um aluno de Ciência da Computação que é odiado pelos colegas" como p ∧ q,
+em que p representa "Há um estudante de Ciência da Computação" e q representa "Seus colegas o odeiam".
+
+f) Ao representar a frase "Algum político é desonesto" na lógica proposicional, podemos usar simplesmente p,
+que significa "Necessariamente algum político é desonesto".
+
+g) Utilizando a lógica proposicional, podemos representar a frase "Amanhã irei ao cinema e depois irei ao teatro" como p ∧ q,
+em que p representa "Amanhã irei ao cinema" e q representa "Irei ao teatro depois do cinema".
+
+h) Podemos usar a lógica proposicional para representar a frase "Quase todo político é desonesto" como ¬(P)(P ∧ ¬Q), em que p representa "políticos"
+e q representa "desonesto".
+
+i) Na lógica proposicional, podemos representar a frase "Adalton sempre foi amigo de João Augusto" como (R)(P ∧ Q), em que p representa "Adalton"
+e q representa "João Augusto".
+
+j) Ao utilizar a lógica proposicional, podemos representar a frase "Toda regra tem uma exceção" como (R)(P → Q), em que p representa "Toda regra"
+e q representa "Tem uma exceção".
+
